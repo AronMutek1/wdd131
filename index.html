@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rubia M. Francesco - Web Fundamentals</title>
-  <link href="styles/base.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Udo David</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Aron Mutekulwa. week01 Basic Layout">
+    <meta name="author" content="Aron.Mutekulwa">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <h1>WDD 131: Dynamic Web Fundamentals - <span>Rubia M. Francesco</span></h1>
-      <nav>
-        <a href="#">LinkedIn</a>
-        <a href="#">Canvas</a>
-        <a href="#">Scripture</a>
-        <a href="#">Final Project</a>
-      </nav>
-    </div>
-  </header>
-  
-  <main>
-    <section class="about-section">
-      <div class="about-container">
-        <div class="about-me">
-          <h2>About Me</h2>
-          <p>My name is Aron Mutekulwa and I go by Aron. I was born in Uganda and live with my family in Kampala. I am currently working as an data entry  at a Bloom company. My family are my world and I love spending time with them. I love to travel and I love to learn new things.</p>
-        </div>
-        <div class="profile-image">
-          <img src="images/Aron-mutek.jpeg" alt="Aron Mutekulwa">
-        </div>
-      </div>
-    </section>
-
-    <section class="location-section">
-      <h3>Uganda, Kampala</h3>
-      <div class="location-content">
-        <div class="flag">
-          <img src="images/Flag_of_Uganda.svg.png" alt="Official Flag of uganda">
-          <p>Official Flag of uganda</p>
-        </div>
-        <div class="description">
-          <p>Uganda is the 4th largest island in the world and is located in the Indian Ocean. It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The island is best known for its lemurs, baobab trees, and vanilla.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="resources-section">
-      <h2>Web Dev Resources</h2>
-      <ul>
-        <li><a href="#">Dev.to Community</a></li>
-        <li><a href="#">Smashing Magazine</a></li>
-        <li><a href="#">CSS Tricks</a></li>
-        <li><a href="#">W3 Schools</a></li>
-        <li><a href="#">Udemy</a></li>
-        <li><a href="#">Image Placeholder</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>©2024 🌺 Aron Mutekulwa 🌺 Uganda</p>
-    <p>Last Modification: 01/11/2024 18:33:54</p>
-  </footer>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Aron Mutekulwa</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/aron-mutekulwa-06808a195/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <header>
+                <h4>About Me</h4>
+            </header> 
+            <div>
+            <img class="profile" src="images/Aron-mutek.jpeg" alt="Aron.Mutekulwa" width="200">         
+            <p>Hello! My name is Aron Mutekulwa  and I am a software development student at BYU-Idaho. I am passionate about technology, problem-solving, and learning new skills. I enjoy working on projects, collaborating with others, and finding innovative solutions to challenges.</p>
+            </div>
+            <div class="subsection">
+            <h3>Kampala,Uganda</h3>
+            <img class="flag" src="images/Flag_of_Uganda.svg.png" alt="Ugandan.flag" width="200">         
+            <p>Uganda is a landlocked country in East Africa, known as the "Pearl of Africa" for its natural beauty, wildlife, and diverse culture. Its capital city is Kampala, and it borders Kenya, Tanzania, Rwanda, South Sudan, and the Democratic Republic of Congo. Uganda is home to Lake Victoria and the source of the Nile River.</p>
+            </div>
+        </section>
+        <section class="card">
+            <header>
+                <h4>Aron Mutekulwa</h4>
+            </header>
+            <div class="subsection2">
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="http://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image</a></li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Aron Mutekulwa
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
