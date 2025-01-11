@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #2a4f6e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header h1 span {
+    color: #ffd700;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section */
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  .about-me {
+    flex: 3;
+    margin-right: 1rem;
+  }
+  
+  .about-me h2 {
+    background-color: #2a4f6e;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .about-me p {
+    margin-top: 1rem;
+  }
+  
+  .profile-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    max-width: 150px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  /* Location Section */
+  .location-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .location-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2a4f6e;
+  }
+  
+  .location-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .flag img {
+    max-width: 120px;
+    display: block;
+    border: 1px solid #ccc;
+  }
+  
+  .flag p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .description {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  /* Resources Section */
+  .resources-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resources-section h2 {
+    background-color: #2a4f6e;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .resources-section ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .resources-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resources-section a {
+    text-decoration: none;
+    color: #2a4f6e;
+  }
+  
+  .resources-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #2a4f6e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 3px solid #ccc;
+  }
+  
+  footer p {
+    margin: 0.2rem 0;
+  }
