@@ -4,62 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Temple Album</title>
-    <meta name="description" content="Temple Album">
-    <meta name="keywords" content="Temple Album, Dallas Texas Temple">
-    <meta name="author" content="Aron Mutekulwa"> 
+    <title>Temple Album</title>
+    <meta name="description" content="A curated album showcasing various temples.">
+    <meta name="keywords" content="Temple Album, Temples, Architecture, Culture">
+    <meta name="author" content="Demetrio Aris Gonzalez">
+    <!-- Preconnect to improve loading performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Filtered Temple Album</h1>
-        <button id="menu">≡</button>
+        <h1 class="nameHeader">Temple Album</h1>
+        <button id="menu" title="Menu"></button>
         <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
+            <a class="active" href="#" id="home-nav">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
         </nav>
     </header>
-
     <main>
-        <div class="container">
-            <figure>
-                <img class="img-temple" src="images/salt-lake-temple-15669-main.jpg" loading="lazy" width="250" height="167">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple" src="images/077-Palmyra-New-York-Temple.jpg" loading="lazy" width="250" height="167">
-                <figcaption>Palmyra New York Temple</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple" src="images/dallas-texas-temple-55240-main.jpg" loading="lazy" width="250" height="167">
-                <figcaption>Dallas Texas Temple</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple" src="images/nairobi-kenya-temple-56573-main.jpg" loading="lazy" width="250" height="167">
-                <figcaption>Nairobi Kenya Temple </figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple" src="images/brigham-city-utah-temple-39612-main.jpg" loading="lazy" width="250" height="167">
-                <figcaption>Brigham City Utah Temple</figcaption>
-            </figure>
-            <img class="img-temple" src="images/san-juan-puerto-rico-temple-48152-main.jpg" loading="lazy" width="250" height="167">
-            <figcaption>San Juan Puerto Rico Temple</figcaption>
-		</figure>
+        <h2 class="home title">Welcome to the Temple Album</h2>
+        <div class="container home">
+            <!-- Temple Card Example -->
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/san-juan-puerto-rico-temple/san-juan-puerto-rico-temple-48152-main.jpg" alt="Temple 1">
+                <div class="San Juan Puerto Rico Temple">
+                    <h3>Puerto</h3>
+                    <p>Location:Puerto Rico, United States</p>
+                    <p>Dedicated:Dec,2025</p>
+                    <p>Area:78,630 sq ft</p>
+                </div>
+            </div>
+            <!-- Add more temple cards as needed -->
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-39612-main.jpg" alt="Temple 1">
+                <div class="Brigham City Utah Temple">
+                    <h3>Utah Temple</h3>
+                    <p>Location: Utah, United States</p>
+                    <p>Dedicated:3 October</p>
+                    <p>Area: 96,630 sq ft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/helsinki-finland-temple/helsinki-finland-temple-22169-main.jpg" alt="Temple 1">
+                <div class="Helsinki Finland">
+                    <h3>Helsinki Finland</h3>
+                    <p>Location:Finland</p>
+                    <p>Dedicated:2006, Februar</p>
+                    <p>Area:16,350 sq ft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-40551-main.jpg" alt="Temple 1">
+                <div class="Manti Utah Temple">
+                    <h3>Manti Utah Temple</h3>
+                    <p>Location:Utah, United States</p>
+                    <p>Dedicated:May, 21</p>
+                    <p>Area:74,792 sq ft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-38451-main.jpg" alt="Temple 1">
+                <div class="Payson Utah">
+                    <h3>Payson Utah</h3>
+                    <p>Location:Utah, United States</p>
+                    <p>Dedicated: 2015, June</p>
+                    <p>Area:96,630 sq ft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg" alt="Temple 1">
+                <div class="Yigo Guam">
+                    <h3>Yigo Guam</h3>
+                    <p>Location:Yigo, Guam</p>
+                    <p>Dedicated:2020, May</p>
+                    <p>Area:6,861 sq ft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-14992-main.jpg" alt="Temple 1">
+                <div class="Washington D.C.">
+                    <h3>Washington D.C.</h3>
+                    <p>Location:United States</p>
+                    <p>Dedicated:1974,Nov</p>
+                    <p>Area:156,558 sqft</p>
+                </div>
+            </div>
+            <div class="temple-card">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/127-Panama-City-Panama-Temple.jpg" alt="Temple 1">
+                <div class="Panamá City Panamá">
+                    <h3>Panamá City</h3>
+                    <p>Location:Panamá, Panama</p>
+                    <p>Dedicated:2008, August</p>
+                    <p>Area:18,943 sq ft</p>
+                </div>
+            </div>
         </div>
     </main>
-
     <footer>
-        <p>&copy; <span id="currentyear">2025</span> - All Rights Reserved</p>
-        <p id="lastModified">Last updated: </p>
+        <p>
+            &copy;<span id="currentyear"></span> - Demetrio Aris Gonzalez - Panamá
+        </p>
+        <p id="lastModified"></p>
     </footer>
+    <script>
+        // Set current year in the footer
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // Set last modified date in the footer
+        document.getElementById('lastModified').textContent = `Last updated: ${document.lastModified}`;
+    </script>
 </body>
 
 </html>
