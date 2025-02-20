@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Personal Finance Budget Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="contact-info">
+      <h2>Get in Touch</h2>
+      <img src="images/pexels-negativespace-33999.jpg" alt="Contact support" class="page-image"  loading="lazy">
+      <p>Have questions or need support? Fill out the form below or reach out directly.</p>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Personal Finance Budget Tracker. <a href="references.html">References</a></p>
+  </footer>
+  
+  <script>
+    // Simple contact form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert(`Thank you, ${document.getElementById('name').value}. Your message has been sent!`);
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>

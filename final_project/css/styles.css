@@ -1,0 +1,136 @@
+/* Reset and General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #0077cc;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background: #005fa3;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+  display: block;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Main Content */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+  margin-bottom: 30px;
+}
+section h2, section h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #0077cc;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+}
+section p, section li, label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Page Images */
+.page-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 10px;
+}
+form input, form select, form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #005fa3;
+}
+
+/* Transaction List */
+#transactionList {
+  list-style: none;
+  padding-left: 0;
+}
+#transactionList li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
