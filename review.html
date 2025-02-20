@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/styles1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <section class="confirmation">
+      <p>Your review has been submitted successfully.</p>
+      <p>You have submitted <span id="reviewCount">0</span> review(s) so far.</p>
+      <a href="form.html" class="return-link">Submit Another Review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2024 &#127800; Rubia Magdalena Francesco &#127800; Madagascar</p>
+    <p>Last Modification: 02/26/2024 13:56:10</p>
+  </footer>
+
+  <script>
+    // Get current count from localStorage or set to 0 if not found
+    let count = localStorage.getItem("reviewCount") || 0;
+
+    // Increase by 1 because this page is loaded after form submission
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    // Display the updated count in the span
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+</body>
+</html>
