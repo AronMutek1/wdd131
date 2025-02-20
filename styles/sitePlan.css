@@ -1,0 +1,84 @@
+:root {
+    /* CSS HEX */
+    --oxford-blue: #0a1128ff;
+    --penn-blue: #001f54ff;
+    --indigo-dye: #034078ff;
+    --cerulean: #1282a2ff;
+    --white: #fefcfbff;
+  
+    --barlow-regular-font-family: "Barlow", sans-serif;
+    --barlow-regular-font-weight: 400;
+    --barlow-regular-font-style: normal;
+  
+    --lato-regular-font-family: "Lato", sans-serif;
+    --lato-regular-font-weight: 400;
+    --lato-regular-font-style: normal;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-family: var(--barlow-regular-font-family);
+    color: var(--penn-blue);
+  }
+  
+  h2 {
+    color: var(--penn-blue);
+  }
+  
+  p {
+    color: var(--oxford-blue);
+  }
+  
+  #site-name,
+  #site-purpose,
+  #scenarios,
+  #color-schema,
+  #typography,
+  #wireframe {
+    max-width: 800px;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .titleEx,
+  .paragraphEx {
+    font-family: var(--lato-regular-font-family);
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .headfoot {
+    font-family: var(--barlow-regular-font-family);
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .headerEx,
+  .footerEx {
+    width: 200px;
+    height: 30px;
+    background-color: var(--indigo-dye);
+    color: var(--white);
+    text-align: center;
+    line-height: 30px;
+    margin: 10px;
+  }
+  
+  /* Resize only the wireframe images */
+  #wireframe img {
+    width: 25%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+  
