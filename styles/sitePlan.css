@@ -1,84 +1,82 @@
-:root {
-    /* CSS HEX */
-    --oxford-blue: #0a1128ff;
-    --penn-blue: #001f54ff;
-    --indigo-dye: #034078ff;
-    --cerulean: #1282a2ff;
-    --white: #fefcfbff;
-  
-    --barlow-regular-font-family: "Barlow", sans-serif;
-    --barlow-regular-font-weight: 400;
-    --barlow-regular-font-style: normal;
-  
-    --lato-regular-font-family: "Lato", sans-serif;
-    --lato-regular-font-weight: 400;
-    --lato-regular-font-style: normal;
-  }
-  
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    display: grid;
-    place-items: center;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-family: var(--barlow-regular-font-family);
-    color: var(--penn-blue);
-  }
-  
-  h2 {
-    color: var(--penn-blue);
-  }
-  
-  p {
-    color: var(--oxford-blue);
-  }
-  
-  #site-name,
-  #site-purpose,
-  #scenarios,
-  #color-schema,
-  #typography,
-  #wireframe {
-    max-width: 800px;
-    margin-bottom: 2rem;
-    text-align: left;
-  }
-  
-  .titleEx,
-  .paragraphEx {
-    font-family: var(--lato-regular-font-family);
-    color: green;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .headfoot {
-    font-family: var(--barlow-regular-font-family);
-    color: green;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .headerEx,
-  .footerEx {
-    width: 200px;
-    height: 30px;
-    background-color: var(--indigo-dye);
-    color: var(--white);
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #0077cc;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    line-height: 30px;
-    margin: 10px;
-  }
-  
-  /* Resize only the wireframe images */
-  #wireframe img {
-    width: 25%;
-    max-width: 300px;
+}
+
+h1, h2, h3 {
+    color: #0077cc;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Wireframe Section */
+.wireframe {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+
+.wireframe img {
+    max-width: 250px;
+    height: auto;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+}
+img {
+    max-width: 150px; /* Smaller image size */
     height: auto;
     display: block;
-    margin: 20px 0;
-  }
-  
+    margin: 10px auto; /* Centers the images */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    margin-top: 20px;
+}
